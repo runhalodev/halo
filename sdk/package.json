@@ -1,13 +1,20 @@
 {
-  "name": "halo-sdk",
+  "name": "@runhalodev/sdk",
   "version": "0.0.1",
-  "private": true,
   "description": "x402 client for Halo",
+  "license": "Apache-2.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsc",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "ethers": "6.17.0"
