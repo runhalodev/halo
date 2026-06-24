@@ -1,0 +1,71 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# Frontend
+.vite/
+
+# Environment
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Claude Code
+CLAUDE.md
+.claude/
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Database (local dev)
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+data/
+
+# Keystores (operator wallets — must never be committed)
+keystore.json
+keystores/
+*.keystore
+
+# Fly
+fly.*.log
+.fly/
+
+# Secrets / keys (paranoid catch-all)
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+secrets/
+.secrets/
+.aws/
+.gcloud/
+gcp-key.json
+service-account.json
+credentials.json
+

@@ -1,0 +1,36 @@
+{
+  "name": "halo-cli",
+  "version": "0.0.1",
+  "private": true,
+  "description": "halo — operator + payer CLI",
+  "bin": {
+    "halo": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@noble/curves": "1.2.0",
+    "@noble/hashes": "1.3.2",
+    "dotenv": "16.4.5",
+    "ethers": "6.17.0",
+    "nearai-cloud-verifier": "0.0.1-alpha.1",
+    "prompts": "2.4.2",
+    "undici": "^8.5.0",
+    "ws": "8.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/prompts": "^2.4.9",
+    "@types/ws": "^8.5.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
